@@ -9,7 +9,7 @@ interface MetronomeProps {}
 export const Metronome: FC<MetronomeProps> = ({}) => {
   return (
     <div className="flex h-screen items-center justify-center">
-      <div className="flex w-80 flex-col items-center justify-between shadow-md">
+      <div className="flex w-96 flex-col items-center justify-between">
         <BPM />
         <Slider />
         <PlayButton />
