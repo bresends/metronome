@@ -11,28 +11,28 @@ export const Slider: FC<SliderProps> = ({ setTempo, tempo }) => {
 
   useEffect(() => {
     if (tempo < 30) {
-      setTempoString(`Ultra Slow`);
+      setTempoString("Ultra Slow");
     } else if (tempo < 40) {
-      setTempoString(`Super Slow`);
-    } else if (tempo < 60) {
-      setTempoString(`Slow`);
-    } else if (tempo < 100) {
-      setTempoString(`Medium Slow`);
+      setTempoString("Super Slow");
+    } else if (tempo < 80) {
+      setTempoString("Slow");
+    } else if (tempo < 120) {
+      setTempoString("Medium Slow");
     } else if (tempo < 140) {
-      setTempoString(`Medium`);
+      setTempoString("Medium");
     } else if (tempo < 160) {
-      setTempoString(`Medium Fast`);
+      setTempoString("Medium Fast");
     } else if (tempo < 180) {
-      setTempoString(`Fast`);
+      setTempoString("Fast");
     } else if (tempo < 200) {
-      setTempoString(`Very Fast`);
+      setTempoString("Very Fast");
     } else if (tempo < 240) {
-      setTempoString(`Super Fast`);
+      setTempoString("Super Fast");
     } else if (tempo < 260) {
-      setTempoString(`Extremely Fast`);
+      setTempoString("Extremely Fast");
     } else if (tempo <= 280) {
-      setTempoString(`Insanely Fast`);
-    } else setTempoString(`Ultra Slow`);
+      setTempoString("Insanely Fast");
+    } else setTempoString("Ultra Slow");
   }, [tempo]);
 
   return (
