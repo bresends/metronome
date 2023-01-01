@@ -5,13 +5,11 @@ interface BPMProps {}
 export const BPM: FC<BPMProps> = ({}) => {
   return (
     <>
-      <div className="text-baseRed py-4">
-        <span className="text-7xl font-bold">140</span>
+      <div className="py-8 text-baseRed">
+        <span className="text-8xl font-bold">140</span>
         <span className="font-bold">BPM</span>
       </div>
-      <div>
-        <span className="text-sm uppercase">Super Fast</span>
-      </div>
+      <span className="text-md pb-4 uppercase">Super Fast</span>
     </>
   );
 };

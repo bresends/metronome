@@ -1,15 +1,17 @@
-import type { FC } from 'react';
-import { TempoButton } from './TempoButton';
+import type { FC } from "react";
+import { TempoButton } from "./TempoButton";
 
 interface MeasureProps {}
 
 export const Measure: FC<MeasureProps> = ({}) => {
   return (
-    <div>
-      <TempoButton />
-      <span>4</span>
-      <TempoButton />
+    <>
+      <div className="flex items-center justify-center space-x-4">
+        <TempoButton decrease small />
+        <span>4</span>
+        <TempoButton small />
+      </div>
       <p>Beats per Measure</p>
-    </div>
+    </>
   );
 };
