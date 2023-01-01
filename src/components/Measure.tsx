@@ -1,17 +1,27 @@
 import type { FC } from "react";
-import { TempoButton } from "./TempoButton";
+import { RoundButton } from "./RoundButton";
 
-interface MeasureProps {}
+interface MeasureProps {
+  measure: number;
+  setMeasure: (measure: number) => void;
+}
 
-export const Measure: FC<MeasureProps> = ({}) => {
+export const Measure: FC<MeasureProps> = ({ measure, setMeasure }) => {
   return (
     <>
       <div className="flex items-center justify-center space-x-4 py-4">
-        <TempoButton decrease small />
-        <span className="text-2xl">4</span>
-        <TempoButton small />
+        <RoundButton
+          decrease
+          small
+          onClickFn={() => measure > 1 && setMeasure(measure - 1)}
+        />
+        <span className="text-2xl">{measure}</span>
+        <RoundButton
+          small
+          onClickFn={() => measure < 12 && setMeasure(measure + 1)}
+        />
       </div>
-      <p className="text-xs uppercase py-4">Beats per Measure</p>
+      <p className="py-4 text-xs uppercase">Beats per Measure</p>
     </>
   );
 };

@@ -1,15 +1,14 @@
-import type { FC } from "react";
+import { FC, useState } from "react";
 
-interface BPMProps {}
+interface BPMProps {
+  tempo: number;
+}
 
-export const BPM: FC<BPMProps> = ({}) => {
+export const BPM: FC<BPMProps> = ({ tempo }) => {
   return (
-    <>
-      <div className="py-8 text-baseRed">
-        <span className="text-8xl font-bold">140</span>
-        <span className="font-bold">BPM</span>
-      </div>
-      <span className="text-md pb-4 uppercase">Super Fast</span>
-    </>
+    <div className="py-8 text-baseRed">
+      <span className="text-8xl font-bold">{tempo}</span>
+      <span className="font-bold">BPM</span>
+    </div>
   );
 };
