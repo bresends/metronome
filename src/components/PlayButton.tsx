@@ -1,20 +1,24 @@
 import { FC } from "react";
-import audio from "../assets/click1.mp3";
 
-interface PlayButtonProps {}
+interface PlayButtonProps {
+  isRunning: boolean;
+  playFn: () => void;
+  stopFn: () => void;
+}
 
-export const PlayButton: FC<PlayButtonProps> = ({}) => {
-  const player = new Audio(audio);
-
+export const PlayButton: FC<PlayButtonProps> = ({
+  playFn,
+  stopFn,
+  isRunning,
+}) => {
   return (
     <>
       <button
-        onClick={() => player.play()}
+        onClick={isRunning ? () => stopFn() : () => playFn()}
         className="my-4 flex h-20 w-20 items-center justify-center rounded-full bg-baseRed text-center text-sm text-white transition duration-200 hover:scale-110 hover:bg-red-400"
       >
-        START
+        {isRunning ? "Stop" : "Play"}
       </button>
-      <audio src={audio} className="bg-red-300" />
     </>
   );
 };

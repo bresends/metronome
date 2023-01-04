@@ -11,16 +11,16 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.2.1
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-use-precision-timer: ^3.1.6
   tailwindcss: ^3.2.4
   typescript: ^4.9.3
   vite: ^4.0.0
-  worker-timers: ^7.0.60
 
 dependencies:
   clsx: 1.2.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  worker-timers: 7.0.60
+  react-use-precision-timer: 3.1.6_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
   '@types/react': 18.0.26
@@ -35,13 +35,6 @@ devDependencies:
   vite: 4.0.3
 
 packages:
-
-  /@babel/runtime/7.20.7:
-    resolution: {integrity: sha512-UF0tvkUtxwAgZ5W/KrkHf0Rn0fdnLDU9ScxBrEVNUprE/MzirjK4MJUX1/BVDv00Sv8cljtukVK1aky++X1SjQ==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.13.11
-    dev: false
 
   /@esbuild/android-arm/0.16.12:
     resolution: {integrity: sha512-CTWgMJtpCyCltrvipZrrcjjRu+rzm6pf9V8muCsJqtKujR3kPmU4ffbckvugNNaRmhxAF1ZI3J+0FUIFLFg8KA==}
@@ -586,14 +579,6 @@ packages:
       micromatch: 4.0.5
     dev: true
 
-  /fast-unique-numbers/6.0.25:
-    resolution: {integrity: sha512-H9tmI58i2VEyreK3VhCQaSAyUN733LMzhXnOcdxVWVaQIFWtoaM9pORi7h9DUgRPx6DiyvXiSb1v8MqBcfiPhg==}
-    engines: {node: '>=12.20.1'}
-    dependencies:
-      '@babel/runtime': 7.20.7
-      tslib: 2.4.1
-    dev: false
-
   /fastq/1.14.0:
     resolution: {integrity: sha512-eR2D+V9/ExcbF9ls441yIuN6TI2ED1Y2ZcA5BmMtJsOkWOFRJQ0Jt0g1UwqXJJVAb+V+umH5Dfr8oh4EVP7VVg==}
     dependencies:
@@ -854,6 +839,27 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-sub-unsub/2.1.10_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-iNDTmwmVTYVaB1/d3iy9sV2riUo9t747diJ/xA+pdq/yEzAcRm969cq9SCc+sNsL1l5m80u0usC0tGQoaj2Qrg==}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /react-use-precision-timer/3.1.6_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-f2Vh6RQcb9uLGlDIoUStA7R0/6RFn1XA4my7PSMB0eyRRq1lKXr24lrS8VNMF83cc8ztRQSkJ7b5f+k4vM0n/g==}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-sub-unsub: 2.1.10_biqbaboplfbrettd7655fr4n2y
+    dev: false
+
   /react/18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
@@ -873,10 +879,6 @@ packages:
     dependencies:
       picomatch: 2.3.1
     dev: true
-
-  /regenerator-runtime/0.13.11:
-    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
-    dev: false
 
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
@@ -963,10 +965,6 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /tslib/2.4.1:
-    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
-    dev: false
-
   /typescript/4.9.4:
     resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
     engines: {node: '>=4.2.0'}
@@ -1020,31 +1018,6 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
-
-  /worker-timers-broker/6.0.80:
-    resolution: {integrity: sha512-K703hGGjkmbZl9bkKN//9cEqGBh9FRYnlmT7F6MbIehwvcKakw+ybEshORyOnVm5K4jp9pKdzi/bdHVwFEilqg==}
-    dependencies:
-      '@babel/runtime': 7.20.7
-      fast-unique-numbers: 6.0.25
-      tslib: 2.4.1
-      worker-timers-worker: 7.0.46
-    dev: false
-
-  /worker-timers-worker/7.0.46:
-    resolution: {integrity: sha512-sg45QK1e6hNT0Mfh6iuWwL6STiFbUpsJCAf0in6NXBanbHE1YGaSrOaPeTMxiOl0oevLEjM6POJR1ZV7mzbbpQ==}
-    dependencies:
-      '@babel/runtime': 7.20.7
-      tslib: 2.4.1
-    dev: false
-
-  /worker-timers/7.0.60:
-    resolution: {integrity: sha512-kom5j7+JQU0uuJAqAeFvxPpKlp21BH09YLMU/JLKA+0Zs3WTGk7WSBFYjdR3G+kjXr6qWD7zIcenv3oXaWBJzw==}
-    dependencies:
-      '@babel/runtime': 7.20.7
-      tslib: 2.4.1
-      worker-timers-broker: 6.0.80
-      worker-timers-worker: 7.0.46
-    dev: false
 
   /xtend/4.0.2:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
