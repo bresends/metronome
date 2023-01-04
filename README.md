@@ -50,8 +50,8 @@ Este projeto de metrônomo foi criado como uma oportunidade para estudar a preci
 
 ### Github Pages
 
-<a href="https://bresends.github.io/date_add/">
-    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="50" height="50" alt="Github Icon">
+<a href="https://precision-metronome.netlify.app/">
+    <img src="https://www.netlify.com/v3/img/components/full-logo-light.png" width="300" height="80" alt="Netlify Icon">
 </a>
 
 [Veja a demo ao vivo](https://precision-metronome.netlify.app/)
