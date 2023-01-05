@@ -12,7 +12,7 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/bresends/metronome">
 
   <img alt="Repository size" src="https://img.shields.io/github/languages/code-size/bresends/metronome">
-  <a href="https://github.com/bresends/date_add/commits/master">
+  <a href="https://github.com/bresends/metronome/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/bresends/metronome">
   </a>
   <img alt="GitHub" src="https://img.shields.io/github/license/bresends/metronome">
