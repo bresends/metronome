@@ -18,7 +18,7 @@
   <img alt="GitHub" src="https://img.shields.io/github/license/bresends/metronome">
 </p>
 
-![Demo](https://i.imgur.com/UhWhXA1.gif)
+![Demo](https://i.imgur.com/zejJzHl.gif)
 
 <p align="center">
   <a href="#hammer_and_wrench-Stack">:hammer_and_wrench: <strong>Stack</strong> </a> |
@@ -58,7 +58,7 @@ Este projeto de metrônomo foi criado como uma oportunidade para estudar a preci
 
 # :bookmark_tabs: Licença
 
-Esse projeto está sob a **_MIT license_**. Veja [LICENÇA](https://github.com/bresends/metronome/blob/main/License.md) para mais informações.
+Esse projeto está sob a **_MIT license_**. Veja [LICENÇA](https://github.com/bresends/metronome/blob/main/LICENCE.md) para mais informações.
 
 ---
 
