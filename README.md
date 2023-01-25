@@ -18,7 +18,7 @@
   <img alt="GitHub" src="https://img.shields.io/github/license/bresends/metronome">
 </p>
 
-![Demo](https://i.imgur.com/zejJzHl.gif)
+![Demo](https://i.imgur.com/UhWhXA1.gif)
 
 <p align="center">
   <a href="#hammer_and_wrench-Stack">:hammer_and_wrench: <strong>Stack</strong> </a> |
